@@ -1,0 +1,269 @@
+.plah-product-buttons {
+	display: flex;
+	margin: 10px 0 10px;
+	gap: 8px;
+}
+
+.plah-button {
+	background-color: transparent;
+}
+
+.plah-button:focus {
+	outline: none;
+}
+
+.plah-button:hover {
+	background-color: #EEEEEE;
+}
+
+.plah-button.liked,
+.plah-button.hidden {
+	background-color: #EEEEEE;
+}
+
+.plah-button.liked:hover,
+.plah-button.hidden:hover {
+	background-color: #fff;
+}
+
+.plah-button span {
+	display: inline-block;
+}
+
+.plah-button span.like-count {
+	margin-right: 4px;
+}
+
+.plah-button span.like-icon img,
+.plah-button span.hide-icon img {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/**
+ * Product Archive
+ */
+ul.products li.product .plah-button span.hide-icon img {
+	margin: 0;
+	display: inline-block;
+}
+
+
+/* The Modal (background) */
+.plah-modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 9999; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.plah-modal .modal-content {
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	border: 1px solid #888;
+	width: 70%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-webkit-animation-name: animatetop;
+	-webkit-animation-duration: 0.4s;
+	animation-name: animatetop;
+	animation-duration: 0.4s;
+	border-radius: 8px;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+	from {
+		top: -300px;
+		opacity: 0
+	}
+	to {
+		top: 0;
+		opacity: 1
+	}
+}
+
+@keyframes animatetop {
+	from {
+		top: -300px;
+		opacity: 0
+	}
+	to {
+		top: 0;
+		opacity: 1
+	}
+}
+
+/* The Close Button */
+.plah-modal .close {
+	color: #999;
+	font-size: 28px;
+	font-weight: bold;
+	position: absolute;
+	right: 8px;
+	top: 0;
+}
+
+.plah-modal .close:hover,
+.plah-modal .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.plah-modal .modal-header {
+	padding: 6px 28px 6px 16px;
+	background-color: #fafafa;
+	color: white;
+	border-radius: 8px 8px 0 0;
+}
+
+.plah-modal .modal-header h2 {
+	margin: 0;
+	font-size: 24px;
+}
+
+.plah-modal .modal-body {
+	padding: 20px 16px;
+}
+
+
+/**
+ * Liked products page
+ */
+.liked-products-items-wrapper {
+	padding-top: 14px;
+	background-color: inherit;
+	border: none;
+	list-style: none;
+	margin: 0;
+}
+
+.liked-products-wrapper .liked-product-item {
+	display: flex;
+	margin-bottom: 20px;
+	background: #eeeeee;
+	padding: 20px;
+}
+
+.liked-products-wrapper .liked-product-item .thumbnail {
+	width: 22%;
+	max-width: 300px;
+}
+
+.liked-products-wrapper .liked-product-item .thumbnail img {
+	width: 100%;
+	margin: 0;
+}
+
+.liked-products-wrapper .liked-product-item .details {
+	flex: 1;
+	padding: 0 20px 0;
+}
+
+.liked-products-wrapper .liked-product-item .details .title {
+	margin-bottom: 4px;
+}
+
+.liked-products-wrapper .liked-product-item .details .title a.like-link {
+	font-size: 22px;
+	margin-bottom: 2px;
+	line-height: 1.2;
+}
+
+.liked-products-wrapper .liked-product-item .details .meta {
+	font-size: 13px;
+}
+
+.liked-products-wrapper .liked-product-item .details .meta .post-category {
+	margin-bottom: 12px;
+}
+
+.liked-products-wrapper .liked-product-item .details .meta .post-category ul {
+	list-style: none;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+
+.liked-products-wrapper .liked-product-item .details .meta .post-title::before {
+	content: '\f235';
+	font-family: "dashicons";
+	font-size: 14px;
+	margin-right: 4px;
+	vertical-align: bottom;
+}
+
+.liked-products-wrapper .liked-product-item .actions {
+	width: 8%;
+	max-width: 120px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.liked-products-wrapper .liked-product-item .actions > span {
+	cursor: pointer;
+}
+
+
+.liked-products-wrapper .liked-product-item .actions .unlike i {
+	font-size: 18px;
+}
+
+
+/* Pagination */
+.liked-products-wrapper .pagination-wrapper {
+	margin: 40px 0 20px;
+	display: flex;
+}
+
+.liked-products-wrapper .pagination-wrapper .pagination-text {
+	text-align: right;
+	flex-grow: 1;
+	font-size: 16px;
+}
+
+.liked-products-wrapper .pagination-wrapper .pagination-links {
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	border: 0;
+	padding: 0;
+	margin: initial;
+	min-height: initial;
+	width: auto;
+	display: inline-block;
+}
+
+
+.liked-products-wrapper .pagination-wrapper .pagination-links > .page-numbers {
+	padding: 6px 12px;
+	line-height: 1.42857143;
+	text-decoration: none;
+	background-color: #fff;
+	border: 1px solid #ddd;
+}
+
+.liked-products-wrapper .pagination-wrapper .pagination-links > .page-numbers.current,
+.liked-products-wrapper .pagination-wrapper .pagination-links > .page-numbers:hover {
+	background-color: #eee;
+	border-color: #eee;
+	color: #333;
+}
+
+@media all AND (max-width: 580px) {
+	.liked-products-wrapper .liked-product-item .details .meta .post-content {
+		display: none;
+	}
+}

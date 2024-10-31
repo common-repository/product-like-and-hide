@@ -1,0 +1,226 @@
+
+#plah-admin-no-wc, #plah-admin-form, .plah-wrapper {
+	background-color: #fff;
+	padding: 10px 20px;
+	border-radius: 8px;
+}
+
+#plah-admin-form h2 {
+	border-bottom: 1px solid #8c8f94;
+	padding-bottom: 14px;
+}
+
+#plah-admin-no-wc p {
+	font-size: 14px;
+}
+
+.plah-admin .screen-heading {
+	background-color: #8BC53F;
+	padding: 10px 20px;
+	border-radius: 8px;
+	margin-bottom: 20px;
+	color: #fff;
+}
+
+.plah-admin .screen-heading img {
+	vertical-align: text-bottom;
+}
+
+.plah-admin .form-table th {
+	width: 330px;
+}
+
+.plah-wrapper p {
+	font-size: 14px;
+}
+
+/**
+* Welcome page
+ */
+.plah-admin .column-wrapper {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+
+}
+
+.plah-admin .column-wrapper > li {
+	width: calc(25% - 30px);
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 8px;
+}
+
+.plah-admin .column-wrapper > li h3 {
+	margin: 8px 0;
+}
+
+/**
+ * Checkbox Toggle UI
+ */
+.plah-admin input[type="checkbox"].plah-ui-toggle {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	-webkit-tap-highlight-color: transparent;
+	width: auto;
+	height: auto;
+	vertical-align: middle;
+	position: relative;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	margin: 0 4px;
+	background: none;
+	box-shadow: none;
+}
+
+.plah-admin input[type="checkbox"].plah-ui-toggle.disabled {
+	cursor: not-allowed;
+}
+
+.plah-admin input[type="checkbox"].plah-ui-toggle:focus {
+	box-shadow: none;
+}
+
+.plah-admin input[type="checkbox"].plah-ui-toggle:after {
+	content: '';
+	font-size: 10px;
+	font-weight: 400;
+	line-height: 22px;
+	text-indent: -14px;
+	color: #ffffff;
+	width: 40px;
+	height: 22px;
+	display: inline-block;
+	border-radius: 72px;
+	box-shadow: 0 0 12px rgba(0, 0, 0, 0.15) inset;
+	background: rgba(0, 0, 0, 0.20);
+}
+
+.plah-admin input[type="checkbox"].plah-ui-toggle.disabled:after {
+	background: rgba(0, 0, 0, 0.10);
+}
+
+.plah-admin input[type="checkbox"].plah-ui-toggle:before {
+	content: '';
+	width: 14px;
+	height: 14px;
+	display: block;
+	position: absolute;
+	top: 4px;
+	left: 3px;
+	margin: 0;
+	border-radius: 50%;
+	background-color: #ffffff;
+}
+
+.plah-admin input[type="checkbox"].plah-ui-toggle:checked:before {
+	left: 23px;
+	margin: 0;
+	background-color: #ffffff;
+	top: 4px;
+}
+
+.plah-admin input[type="checkbox"].plah-ui-toggle,
+.plah-admin input[type="checkbox"].plah-ui-toggle:before,
+.plah-admin input[type="checkbox"].plah-ui-toggle:after,
+.plah-admin input[type="checkbox"].plah-ui-toggle:checked:before,
+.plah-admin input[type="checkbox"].plah-ui-toggle:checked:after {
+	transition: ease .15s;
+}
+
+.plah-admin input[type="checkbox"].plah-ui-toggle:checked:after {
+	content: ' ';
+	background-color: #8BC53F;
+}
+
+#plah-like-icon-preview img {
+	max-width: 64px;
+}
+
+/**
+ * Edit product sidebar meta box
+ */
+.plah-side-stats-wrapper {
+	padding: 12px 0 0;
+}
+
+.plah-side-stats-wrapper > div {
+	margin-bottom: 12px;
+}
+
+.plah-side-stats-wrapper .side-stats-icon img {
+	vertical-align: text-top;
+}
+
+.plah-side-stats-wrapper .like-count-text {
+	font-size: 14px;
+}
+
+
+/**
+ * Admin stats page
+ */
+.plah-description h2 img {
+	vertical-align: text-top;
+}
+.plah-admin-stats-wrapper .stats h3{
+	margin: 8px 0;
+	background-color: #8BC53F;
+	color: #fff;
+	padding: 6px;
+	font-size: 15px;
+	text-align: center;
+}
+.plah-admin-stats-wrapper .stats .no-products{
+	text-align: center;
+}
+
+
+.stat-product-list > li {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.stat-product-list {
+	margin: 12px 0 8px;
+	width: 100%;
+}
+
+.stat-product-list th {
+	padding-bottom: 6px;
+}
+.stat-product-list td {
+	padding: 2px 0 4px;
+}
+.stat-product-list th.counter,
+.stat-product-list td.counter {
+	text-align: center;
+}
+
+.stat-product-list tr:nth-child(even) {
+	background-color: #f3f3f3;
+}
+
+.stat-product-list td.counter img {
+	vertical-align: text-bottom;
+}
+
+.stat-product-list td.product-link {
+	padding-left: 8px;
+}
+
+@media all and (max-width: 768px) {
+	.plah-admin .column-wrapper > li {
+		width: calc(50% - 30px)
+	}
+}
+
+@media all and (max-width: 480px) {
+	.plah-admin .column-wrapper > li {
+		width: 100%;
+	}
+
+}
